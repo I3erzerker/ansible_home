@@ -1,0 +1,9 @@
+---
+
+- hosts: all
+  become: true
+  tasks:
+
+  - name: install qemu guest agent
+    apt:
+      name: qemu-guest-agent
